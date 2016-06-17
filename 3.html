@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+--Copyright(c)2016 All rights reserved.
+--@Licenced  http://www.w3.org
+--@Author  liutian<1538731090@qq.com> liutian_jiayi
+--@Create on 2016-5-24 9:37:40
+--@Version 1.0
+-->
+<html>
+	<head>
+		<title>JS语法：输出语句</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<script>
+			//开始js 使用document.write()方法向HTML页面中输入内容 一行语句 由 内容 和 ";"组成 其中分号可以不写 JS会自动不全 但是要求必须写上
+			document.write("hello world");
+			//向页面中输入 带HTML标签的内容
+			document.write("<h4>hello world</h4>");
+			//同时输出多个内容
+			document.write("hello", "world", "!");
+			//输出带换行的内容 此处的换行为\n文本换行 在HTML中只解析成空格
+			document.writeln("Line 1");
+			document.writeln("Line 2");
+			/**
+			 * 使用document.write()向页面中输出表单
+			 */
+			function f() {
+				document.write('<form method="post" action="">');
+				document.write('<p>姓名：<input type="text" name="name" value="默认姓名" /></p>');
+				document.write('<input type="submit" value="提交" />');
+				document.write('</form>');
+			}
+		</script>
+		<input type="button" value="显示表单" onclick="f();"/>
+	</body>
+</html>

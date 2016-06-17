@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+--Copyright(c)2016 All rights reserved.
+--@Licenced  http://www.w3.org
+--@Author  liutian<1538731090@qq.com> liutian_jiayi
+--@Create on 2016-5-24 10:40:19
+--@Version 1.0
+-->
+<html>
+	<head>
+		<title>JS语法：运算符</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<script>
+			/**
+			 * JS中支持 算数运算、比较运算、逻辑运算、条件运算 等基本操作
+			 */
+			//算数运算中的 特殊 + 运算
+			var x = 2;//"2"
+			var y = 3;
+			document.write(x + y, "<br />");
+			//+ 运算也可用于字符串 用作"连字符"
+			var s1 = "hello";
+			var s2 = "world";
+			document.write(s1 + s2, "<br />");
+			//如果一个字符串和一个数字相加 JS会隐式的将数字转化成字符串 执行连接操作
+			document.write(x + s1, "<br />");
+			/**
+			 * 几种数据类型之间的转化：
+			 *	显式的转化
+			 */
+			//将数值转化成字符串
+//			x = x + "";
+//			document.write(x, typeof x, "<br />");
+//			x = String(x);
+//			document.write(x, typeof x, "<br />");
+//			x = x.toString();
+//			document.write(x, typeof x, "<br />");
+//			//将数字转化成布尔值 0转化成false　非0为true
+//			x = Boolean(x);
+//			document.write(x, typeof x, "<br />");
+			/**
+			 * 将字符串转化成数字
+			 */
+			var tmp = "abc5";
+//			tmp = tmp - 0;
+//			document.write(tmp, typeof tmp, "<br />");
+			//使用Number函数 Number的转化比较严格 如果该字符串中的组成包含字符 则返回NaN(not a number)
+//			tmp = Number(tmp);
+//			document.write(tmp, typeof tmp, "<br />");
+			//使用parseInt整形转化 它会从字符串【起始不为0】处开始截取到出现字符为止 如果起始不为数字 则返回NaN
+//			tmp = parseInt(tmp);
+//			document.write(tmp, typeof tmp, "<br />");
+			/**
+			 * 将字符串转化成布尔值 空值转化成false 非空则为true
+			 */
+			tmp = Boolean(tmp);
+			document.write(tmp, typeof tmp, "<br />");
+			/**
+			 * 将布尔值 转化成数值
+			 * true转化成1 false转化成0
+			 */
+//			var a = true;
+//			a = Number(a);
+//			document.write(a, typeof a, "<br />");
+			/**
+			 * 将布尔值转化成字符串
+			 */
+			var a = true;
+			a = String(a);
+			document.write(a, typeof a, "<br />");//"true"
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+--Copyright(c)2016 All rights reserved.
+--@Licenced  http://www.w3.org
+--@Author  liutian<1538731090@qq.com> liutian_jiayi
+--@Create on 2016-5-24 9:50:53
+--@Version 1.0
+-->
+<html>
+	<head>
+		<title>Js语法：变量</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<script>
+			//JS中定义变量使用var 声明,变量名 遵循标识符命名规范，只能以字母和下划线（或$）
+			var str = "hello";
+			var boolean = true;
+			var i = 0;
+			var $a = "abc";		
+			//JS中的变量名大小写敏感的
+//			document.write(Str, "<br />");	//Str  is not defined
+			/**
+			 * 有关变量
+			 */
+			//可以不使用var声明一个变量 未经var声明的变量在函数体内为全局作用域
+			undeclare = "undeclare";
+			document.write(undeclare, "<br />");
+			//声明但未赋值的变量 默认值为"undefined" 此处的undefined是字符串的值
+			var undef;
+			document.write(undef, "<br />");
+			//引用一个未定义的变量 会报错 
+//			document.write(demo, "<br />");		//ReferenceError: demo is not defined
+			//删除变量 使用delete运算 var声明的变量不能删除
+//			delete undeclare;
+//			document.write(undeclare, "<br />");	//ReferenceError: undeclare is not defined
+			delete str;
+			document.write(str, "<br />");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+--Copyright(c)2016 All rights reserved.
+--@Licenced  http://www.w3.org
+--@Author  liutian<1538731090@qq.com> liutian_jiayi
+--@Create on 2016-5-24 8:43:03
+--@Version 1.0
+-->
+<html>
+    <head>
+        <title>JS引入</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function f() {
+                var name = prompt("点谁出台？", "");
+                if (name) {
+                    var flag = confirm("确认点" + name + "吗？");
+                    if (flag)
+                        alert("我来也");
+                    else
+                        alert("来嘛，大爷！");
+                }
+            }
+        </script>
+        <input type="button" value="点我" onclick="f();" />
+    </body>
+</html>

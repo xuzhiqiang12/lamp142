@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+--Copyright(c)2016 All rights reserved.
+--@Licenced  http://www.w3.org
+--@Author  liutian<1538731090@qq.com> liutian_jiayi
+--@Create on 2016-5-24 10:04:25
+--@Version 1.0
+-->
+<html>
+	<head>
+		<title>JS语法：数据类型</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<script>
+			/**
+			 * js中的几种基本数据类型：字符串、数值、布尔值和NULL 
+			 */
+			var str = "str";	//字符串
+			var boo = true;		//布尔值
+			var num = 142;		//数值
+			var nul = null;		//NULL值
+			//使用typeof查看变量的数据类型
+			document.write(typeof str, "<br />");	//string
+			document.write(typeof num, "<br />");	//number
+			document.write(typeof boo, "<br />");	//boolean
+			
+			/**
+			 * JS中的复合数据类型：数组和对象
+			 */
+			//定义数组 数组是带有编号的数据的集合
+			var arr = ["王伟权", "男", 43];
+			document.write(arr[0], "<br />");//王伟权
+			document.write(typeof arr, "<br />");//object
+			//定义对象 对象是经过命名的数据的集合
+			var obj = {name : "黄亮", sex : "GAY", age : 88};
+			document.write(obj.name, "<br />");
+			document.write(typeof obj, "<br />");//object
+			//js中的数组和对象为引用类型
+			var arr2 = arr;
+			arr[0] = "锯开";
+			document.write(arr2[0], "<br />");
+			//整体查看数组或对象
+			document.write(arr, "<br />");
+			document.write(obj, "<br />");	//object object
+		</script>
+	</body>
+</html>

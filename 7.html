@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+--Copyright(c)2016 All rights reserved.
+--@Licenced  http://www.w3.org
+--@Author  liutian<1538731090@qq.com> liutian_jiayi
+--@Create on 2016-5-24 11:11:04
+--@Version 1.0
+-->
+<html>
+	<head>
+		<title>js语法：比较和逻辑运算 三元运算</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<script>
+			var str = null;
+			document.write(str == null ? "str是空值" : str);
+			//js中 || 运算的使用 如果左边表达式为非空 执行左边 否则执行右边
+			document.write(str || "str为空值");
+
+			var a = 10;
+			var b = 20;
+			!(a == b) ? c = true : c = false;
+			document.write(c == true && a == b ? "c为true" : "c为false");
+		</script>
+	</body>
+</html>
